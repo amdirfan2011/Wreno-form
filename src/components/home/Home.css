@@ -1,0 +1,472 @@
+
+    .right_div_hd{
+        display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    padding: 0 15px;
+        height: auto;
+    overflow: auto;
+    color:#025886;
+    }
+    .right_div_hd .r_div{
+            display: inline-block;
+    width: 100%;
+    height:72vh;
+    overflow: auto;
+    padding:0 5px;
+    }
+    .r_div span{
+                font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0 0 0;
+    line-height: 140%;
+    padding: 2% 0 5% 0;
+    text-align: left;
+    position: relative;
+    font-weight: bold;
+    }
+    .fmch2 p {
+        position: relative;
+        display: inline-block;
+        padding-left: 1.25rem;
+        width: 50%;
+        float: left;
+        font-weight: normal;
+        padding: 1% 0;
+    }
+    .fmch2 .form-check {
+        position: relative;
+        display: inline-block;
+        padding-left: 1.25rem;
+        width: 50%;
+        float: left;
+    }
+    /* collapsible start*/
+    .collapsible {
+    background: none;
+    color: var(--primary);
+    cursor: pointer;
+    padding: 0;
+    width: auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+}
+
+.active, .collapsible:hover {
+  background-color:#fcfcfc;
+}
+
+.content {
+  padding: 0 18px;
+  /* display: none; */
+  overflow: hidden;
+  background:none;
+}
+    /*collapsible end*/
+
+    .r_div .form-group-change {
+    margin-bottom: 1rem;
+    display: inline-block;
+    width:100%;
+    vertical-align: top;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    margin: 0 5px 2% 0;
+}
+.r_div .form-group-change1 {
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+.r_div .form-group-change2 {
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    
+    padding-right: 10px;;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+.form-check-label{
+    display: inline;
+}
+.wrk_dt_div{
+    display: flex;
+}
+.wrk_dt_div label{
+        width: 25%;
+    text-align: left;
+}
+.wrk_dt_div .form-group{
+       display: flex; 
+       width: 100%;
+           margin: 0 0 0px 0;
+    box-shadow: none;
+    padding: 0 0;
+}
+.wrk_dt_div .form-group label{
+        width: 40%;
+    text-align: left;
+}
+.wrk_dt_div .form-group .form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+    width: 40%;
+}
+.wrk_date{
+        margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 10px 10px;
+    border-radius: 8px;
+
+}
+.tm_div{
+    display: inline-block;
+    vertical-align: top;
+}
+.team_cndtn{
+        margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+.tm_div .form-check{
+        display: inline-block;
+}
+.ifm_div{
+        display: inline-block;
+    width: 100%;
+    margin: 2% 0;
+}
+.ifm_div iframe{
+      width: 100%;
+    border-radius: 8px;  
+}
+.r_div .form-group label{
+        display: inline-block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 16px;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 0 10px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+    width: auto;
+    display: inline-block;
+    position: relative;
+}
+.last-mrgn {
+    margin-top: 2rem;
+}
+.r_div .form-group .form-check {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.25rem;
+}
+.video_div{
+        box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 0 15px;
+    border-radius: 8px;
+    width: 100%;
+    display: inline-block;
+}
+.react-tabs__tab {
+    display: inline-block;
+    border: none !important;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 0px 5px !important;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+}
+.react-tabs__tab:focus {
+    box-shadow: none !important;
+    border-color:none !important;
+    outline: none;
+}
+.react-tabs__tab-list {
+    border-bottom: none !important;
+    margin: 0 0 10px;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+.react-tabs__tab-list {
+    border-bottom: none;
+    margin: 0 0 10px;
+    padding: 0;
+}
+.react-tabs__tab--selected {
+    background: #fff;
+    border-color: none !important;
+    color: black;
+    border-radius: 5px 5px 0 0;
+}
+.lead{
+    text-align: center !important;
+}
+.like_pic{
+    width: 7%;
+}
+.like-bt{
+    background-color: #025886;
+    color: #fff;
+}
+.thank-cont{
+    padding:5% 0 0 0;
+}
+input[type="file"] {
+    cursor: pointer;
+  }
+  .tab-form-group {
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+.page6-cont li{
+    list-style: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 991px){
+    .react-tabs__tab {
+        font-size: 40px;
+        font-weight: bold;
+        padding: 0 5px !important;
+    }
+    .like_pic {
+        width: 20%;
+    }
+    .react-tabs__tab-list {
+        border-bottom: none !important;
+        margin: 0 0 10px;
+        padding: 0;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        left: 0%;
+    }
+    .fmch2 .form-check {
+        position: relative;
+        display: inline-block;
+        padding-left: 1.25rem;
+        width: 100%;
+        float: left;
+    }
+    /* .wrkdiv_fmr_grp{
+        display:flex !important;
+    } */
+    .wrk_dt_div .form-group{
+        display:flex !important;  
+    }
+    .wrk_dt_div {
+        display: flex;
+        padding: 0 0;
+    }
+    .r_div .form-group label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        font-size: 16px;
+        text-align: left;
+    }
+    .wrk_dt_div .form-group label {
+        width: 40%;
+        text-align: center !important;
+    }    
+    .r_div .form-group-change {
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+    .section_1{
+            display: inline-block;
+    padding: 0 0 !important;
+    }
+    .hdr_div {
+    background: #025886;
+    display: inline-block;
+    padding:4% 0px !important;
+    position: relative;
+    top: 0;
+    box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+    border-radius: 0 0 8px 8px;
+}
+    .logo_div {
+    display: inline-block;
+    width: 35%;
+    float: left;
+    text-align: left;
+    padding: 0 0;
+}
+.logo_dv_box {
+    display: inline-block;
+    padding: 8px 5px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    text-align: center;
+}
+.wreno_hdng_div {
+    width: 55%;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    padding: 0% 0;
+}
+    .wreno_hdng_div h2 {
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0 0 0;
+    line-height: normal;
+    padding: 0 0;
+    position: relative;
+    color: #fff;
+}
+    .fm_12{
+    width:100% !important;
+}
+    .right_div_hd {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    padding: 5px 0px;
+    height: auto;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 8px;
+    color: #025886;
+}
+.right_div_hd .r_div {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    padding: 0 0px;
+}
+.crsl_left_div {
+    display:none;
+    padding: 0 0 !important;
+    vertical-align: top;
+        min-width: 100% !important;
+            width: 100% !important;
+}
+.header {
+    padding: 0 0 !important;
+    position: sticky;
+    top: 0;
+    display: block;
+    z-index: 9;
+    background: #fff;
+}
+.wrk_date {
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+.r_div .form-group {
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .upload-btn-wrapper .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size:0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+  }
+  
+  
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color:#0258864f;
+  }
+  
+  
+  button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  .pg-mrgn {
+    margin-top: 9rem;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366){
+    .react-tabs__tab-list {
+        border-bottom: none !important;
+        margin: 0 0 10px;
+        padding: 0;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        left: 0%;
+    }
+}

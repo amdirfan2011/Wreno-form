@@ -1,1 +1,23 @@
-Instrution
+1.Install Node Js
+2.once Download and  Install Node js .Just open cmd and Run Command on  (node --version).if installed correct means showing Version
+3.Download git 
+4.once download git files then open git bash and run below command
+a.git init
+b.git clone https://github.com/wreno-private/Wreno-form.git
+c.get Files and open Visual Studio Code(If Not Installed please Install visual studio code Editor) and  click to Terminal and next open 
+terminal under the code editor run command on 
+1.npm install 
+2.npm start
+
+Automatically Run and Open to Browser.
+
+
+if Not using Visual Studio Code Editor na,
+1.open file path and end path directory to cmd
+2.open cmd terminal enter below commands
+
+
+1.npm install 
+2.npm start
+
+Automatically Run and Open to Browser.

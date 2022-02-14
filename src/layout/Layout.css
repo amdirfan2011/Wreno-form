@@ -1,0 +1,68 @@
+.header{
+    padding: 0 0;
+position: sticky;
+top: 0;
+display: block;
+z-index: 9;
+background: #fff;
+}
+.hdr_div{
+   background: #025886;
+     display: inline-block;
+padding: 1% 0;
+position:relative ;
+top: 0;
+box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+border-radius: 0 0 8px 8px;
+
+}
+.logo_div{
+       display: inline-block;
+width: 20%;
+float: left;
+text-align: center;
+padding: 0% 0;
+}
+.logo_div .img_1{
+     display: inline-block;
+width: 20%;
+}
+.logo_div .img_2{
+       display: inline-block;
+width: 50%;
+border-radius: 8px 0 8px 0;
+}
+.wreno_hdng_div{
+       width: 80%;
+display: inline-block;
+text-align: center;
+float: right;
+padding: 0% 0;
+}
+.wreno_hdng_div h2{
+   font-size: 32px;
+display: inline-block;
+width: 100%;
+margin: 10px 0 0 0;
+line-height: normal;
+padding: 0 0;
+position: relative;
+color: #fff;
+}
+.logo_dv_box{
+       display: inline-block;
+padding: 8px 5px;
+width: 70%;
+background: #fff;
+border-radius: 8px;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.header {
+       padding: 0 15px !important;
+       position: sticky;
+       top: 0;
+       display: block;
+       z-index: 9;
+       background: #fff;
+   }
