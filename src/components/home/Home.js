@@ -2,10 +2,19 @@ import React,{useState} from 'react'
 import "./Home.css";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { TabLayout } from '../../common/TabLayout';
+import { Introduction } from './tabs/Introduction';
+import { PersonalInformation } from './tabs/PersonalInformation';
+import { handleNextClick } from './utils/validations';
+
+export const TAB_COUNT = 10
 
 function Home() {
   const [selectedTab, setSelectedTab] = useState(0);
-  const tabCount = 10;
+  const [formData, setFormData] = useState({
+    name: '',
+    email: ''
+  });
 
   return (
     <div className="right_div_hd">
@@ -27,32 +36,14 @@ function Home() {
               <Tab >&bull;</Tab>
             </TabList>
             <TabPanel>
-              <div className="tab">
-                <ul className="page1-cont">
-                  <li>The Wrenner is an entry level position that learns and executes home renovation, repair, and
-                    maintenance tasks.</li>
-                  <li>The Wrenner also supports home projects by taking photos, videos, and completing on-site surveys of
-                    property conditions.</li>
-                  <li>The role may also support quality control and ad-hoc project services for residential real estate.
-                  </li>
-                  <li> This position has flexibility in when and where to work by claiming shifts as they are posted and
-                    desirable in location and schedule</li>
-                </ul>
-              </div>
+              <TabLayout>
+                <Introduction  />
+              </TabLayout>
             </TabPanel>
             <TabPanel>
-              <div className="tab pg-mrgn">
-                <div className="form-group-change page2-lbl ">
-                  <label htmlFor="usr">Name:</label>
-                  <input className="form-control" placeholder="Name..." name="name" title="Name" autoComplete="off" />
-                </div>
-                <div className="form-group-change page2-lbl">
-                  <label htmlFor="usr">Email:</label>
-                  <input className="form-control" placeholder="Email ID..." name="email" autoComplete="off" title="Email" />
-                </div>
-                {/* {/*<p><input placeholder="Name..." onChange="this.className = ''" name="name" title="Name" autoComplete="off"></p>*/}
-                {/*<p><input placeholder="Email ID..." onChange="this.className = ''" name="email" autoComplete="off" title="Email"></p>*/}
-              </div>
+              <TabLayout>
+                  <PersonalInformation formData={formData} setFormData={setFormData} />
+                </TabLayout>
             </TabPanel>
             <TabPanel>
               <div className="tab pg-mrgn ">
@@ -361,9 +352,9 @@ function Home() {
         </form>
       </div>
       <div className="pn">            
-            <button className="previous" type="button" id="prevBtn" onClick={() => setSelectedTab((selectedTab + tabCount - 1) % tabCount )} >Previous</button>
+            <button className="previous" type="button" id="prevBtn" onClick={() => setSelectedTab((selectedTab + TAB_COUNT - 1) % TAB_COUNT )} >Previous</button>
             <div className="divIDClass2">
-              <button className="next" type="button" id="nextBtn" onClick={() => setSelectedTab((selectedTab + 1) % tabCount )}>Next</button>
+              <button className="next" type="button" id="nextBtn" onClick={() => handleNextClick(selectedTab, setSelectedTab, formData)}>Next</button>
 
             </div>
             <div className="divIDClass">
