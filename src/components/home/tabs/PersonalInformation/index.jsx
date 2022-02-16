@@ -18,9 +18,12 @@ export const PersonalInformation = ({formData, setFormData}) => {
   }
 
   return (
-  <div className="w-50 flex flex-column">
+  <div className="w-100 flex flex-column">
+    <div className="form-group-change">
     <TextField className="w-100" id={name} label="Name" value={name} error={hasTyped && name===''} onChange={setName} />
-    <div className='mt4'>
+    </div>
+    
+    <div className='mt4 form-group-change'>
       <TextField className="w-100" id={name} label="Email" value={email} error={hasTyped && email===''} onChange={setEmail} />
     </div>
   </div>

@@ -15,7 +15,7 @@ function Home() {
     name: '',
     email: ''
   });
-
+  const tabCount = 9;
   return (
     <div className="right_div_hd">
       <div className="r_div">
@@ -33,7 +33,7 @@ function Home() {
               <Tab >&bull;</Tab>
               <Tab >&bull;</Tab>
               <Tab >&bull;</Tab>
-              <Tab >&bull;</Tab>
+            
             </TabList>
             <TabPanel>
               <TabLayout>
@@ -63,12 +63,12 @@ function Home() {
                   <label htmlFor="usr">Can you accept a job on a short notice ?:</label>
                   <div className="form-check">
                     <label className="form-check-label" htmlFor="check1">
-                      <input type="radio" className="form-check-input" id="check1" name="short_notice" defaultValue="Yes" />Yes
+                      <input type="radio" className="form-check-input" id="check1" name="short_notice" defaultValue="Yes" required/>Yes
                     </label>
                   </div>
                   <div className="form-check">
                     <label className="form-check-label" htmlFor="check2">
-                      <input type="radio" className="form-check-input" id="check2" name="short_notice" defaultValue="No" />No
+                      <input type="radio" className="form-check-input" id="check2" name="short_notice" defaultValue="No" required/>No
                     </label>
                   </div>
                 </div>
@@ -126,13 +126,13 @@ function Home() {
                     <div className="form-group wrkdiv_fmr_grp ">
                       <label htmlFor="usr">Monday</label>
                       <label className="form-check-label" htmlFor="check1">
-                        <input type="checkbox" className id="check1" name="work_availability[]" defaultValue="m1" />
+                        <input type="checkbox" className id="check1" name="work_availability[]" defaultValue="m1" required/>
                       </label>
                       <label className="form-check-label" htmlFor="check1">
-                        <input type="checkbox" className id="check1" name="work_availability[]" defaultValue="m2" />
+                        <input type="checkbox" className id="check1" name="work_availability[]" defaultValue="m2" required/>
                       </label>
                       <label className="form-check-label" htmlFor="check1">
-                        <input type="checkbox" className id="check1" name="work_availability[]" defaultValue="m3" />
+                        <input type="checkbox" className id="check1" name="work_availability[]" defaultValue="m3" required/>
                       </label>
                     </div>
                   </div>
@@ -225,7 +225,7 @@ function Home() {
             </TabPanel>
             <TabPanel>
               <div className="tab  pg-mrgn">
-                <div className="form-group tab-form-group">
+                <div className="form-group tab-form-group regForm_p">
                   <label htmlFor="usr">Please see below an example document showing required auto insurance coverage.Wreno
                     requires $100k/$300k/$100k limits for your personal automobile policy as part of our own insurance
                     requirements.
@@ -235,9 +235,10 @@ function Home() {
                     <li>$300,000 for injuries total for each accident</li>
                     <li>$100,000 for property damage for each accident</li>
                   </ul>
+                  <p><input className="form-control" type="file"  id="file" name="file" required></input></p>
                   <img className="col-lg-12" src="/images/Auto Insurance.png" />
-                  <span>
-                    <input type="file" name="myfile" required />
+                  <span style={{ fontweight: "normal" , fontSize:"14px" }}>
+                  
                     <br />If you do not currently have these limits, you may increase your coverage by calling your carrier
                     and requesting them<br />
                     Note: additional charges may be incurred for increasing your coverage. At this time, Wreno does not
@@ -266,7 +267,7 @@ function Home() {
             <TabPanel>
               <div className="tab last-mrgn">
                 <div className="team_cndtn">
-                  <div style={{ fontSize: '16px' }}>Terms &amp; Conditions:</div>
+                  <div style={{ fontSize: '19px' }}><b>Terms &amp; Conditions:</b></div>
                   <span style={{ fontWeight: 'normal' }}>
                     <label className="form-check-label" htmlFor="check1">
                       <input type="checkbox" className="form-check-input" id="check1" name="checkbox" defaultValue="Yes" required />
@@ -329,22 +330,6 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </TabPanel>
-            <TabPanel>
-            <div className="tab">
-            <div className=" text-center">
-              <div className=" thank-cont">
-              <img className="like_pic" src="/images/like.png" />
-               
-              <h2 className="display-3">Thank You!</h2>
-              <p className="lead">We're reviewing your application <br></br> We'll reachout within 72 hours, if there is anything missing
-              </p>
-              <p className="lead">
-                <a className="btn btn-sm like-bt" href="test_file_2.php" role="button">Go to homepage</a>
-              </p>
-            </div>
-            </div>
-            </div>
             </TabPanel>
           </Tabs>
 

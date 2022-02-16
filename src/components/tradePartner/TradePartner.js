@@ -11,7 +11,7 @@ function TradePartner() {
         <div className="right_div_hd">
             <div className="r_div">
                 <form id="fupForm" className="regForm" method="POST" encType="multipart/form-data">
-                    <p>Allow 72 hours for processing and someone on our team will reach out to you.</p>
+                    {/* <p>Allow 72 hours for processing and someone on our team will reach out to you.</p> */}
                     <br />
                     <div className="statusMsg" />
                     <Tabs selectedIndex={selectedTab} onSelect={index => setSelectedTab(index)} >
@@ -26,30 +26,41 @@ function TradePartner() {
                             <Tab>&bull;</Tab>
                             <Tab>&bull;</Tab>
                         </TabList>
+                        <TabPanel>
+                            <div className='tab'>
+                            <ul className="page1-cont">
+                                <li>Please fill out this Application if you are interested in partnering with Wreno as a Trade Partner.</li>
+                                <li>Allow 72 hours for processing and someone on our team will reach out to you.</li>
+
+                            </ul>
+                            </div>
+                        </TabPanel>
                         <TabPanel><div className="tab">
+                            <fieldset>
                             <div className="form-group-change">
                                 <label htmlFor="usr">Business name:</label>
-                                <input type="text" className="form-control" id="usr" name="business_name" />
+                                <input type="text" className="form-control" id="usr" name="business_name" required></input>
                             </div>
                             {/* <div class="form-group-change ">*/}
                             {/*  <label for="usr">Email:</label>*/}
                             {/*  <input type="text" class="form-control" id="usr" name="username">*/}
                             {/*</div>*/}
                             <div className="form-group-change ">
-                                <label htmlFor="usr">Business Owner's name:</label>
-                                <input type="text" className="form-control" id="usr" name="name" />
+                                <label htmlFor="usr">Company name:</label>
+                                <input type="text" className="form-control" id="usr" name="name"  required></input>
                             </div>
                             <div className="form-group-change">
                                 <label htmlFor="usr">Best Contect email:</label>
-                                <input type="text" className="form-control" id="usr" name="email" />
+                                <input type="text" className="form-control" id="usr" name="email"  required></input>
                             </div>
+                            </fieldset>
                         </div></TabPanel>
                         <TabPanel><div className="tab">
                             <div className="form-group-change ">
                                 <label htmlFor="usr">Business or owner's phone number:</label>
                                 <input type="text" className="form-control" id="usr" name="mobile" />
                             </div>
-                            <div className="form-group-change2 ">
+                            <div className="form-group-change2 fmch2">
                                 <label htmlFor="usr">What cities do you operate in?</label><br />
                                 <div className="form-check">
                                     <label className="form-check-label" htmlFor="check1">
@@ -248,15 +259,12 @@ function TradePartner() {
                             </div>
                         </div></TabPanel>
                         <TabPanel><div className="tab">
-                            <div className="form-group-change1">
-                                <p style={{ fontWeight: 'normal' }}>Do you have any relevant required trade licensing? Please upload all
+                            <div className="form-group-change1 regForm_p">
+                                <p >Do you have any relevant required trade licensing? Please upload all
                                     your trade licenses below.</p>
                                 <div>
                                 </div>
-                                <div className="upload-btn-wrapper">
-                                    <button className="btn">Upload a file</button>
-                                    <input type="file" name="docum" />
-                                </div>
+                                <p><input className="form-control" type="file"  id="file" name="file" required></input></p>
                             </div>
                             <div className="form-group-change2 ">
                                 <label htmlFor="usr">We require at least $300,000 per occurrence business coverage limits for General
@@ -277,17 +285,14 @@ function TradePartner() {
                             </div>
                         </div></TabPanel>
                         <TabPanel><div className="tab">
-                            <div className="form-group-change1">
-                                <p style={{ fontWeight: 'normal' }}>Please see below an example Certificate of Insurance. Please add<span className="wre-llc"> "Wreno Home Services, LLC"</span> and address (15333 North Pima Road, Suite 305,
+                            <div className="form-group-change1 regForm_p ">
+                                <p >Please see below an example Certificate of Insurance. Please add<span className="wre-llc"> "Wreno Home Services, LLC"</span> and address (15333 North Pima Road, Suite 305,
                                     Scottsdale, Arizona 85260) as an additional insured under "Certificate Holder" on your general
                                     liability policy and upload a copy of the file here.
                                     (<b style={{ color: 'red' }}>Upload Only PDF Format</b>)</p>
+                                    <p><input className="form-control" type="file"  id="file" name="file" required></input></p>
                                 <img className="col-lg-12" src="/images/TradeCOI.png" />
                                 <div>
-                                </div>
-                                <div className="upload-btn-wrapper">
-                                    <button className="btn">Upload a file</button>
-                                    <input type="file" id="file" name="file" />
                                 </div>
                             </div>
                         </div></TabPanel>
@@ -343,7 +348,7 @@ function TradePartner() {
                         <TabPanel><div className="tab">
                             <div className="video_div">
                                 <div className="vd_div">
-                                    <p style={{ fontWeight: 'normal' }}>Please follow the link below to book a time for your HR onboarding and
+                                    <p >Please follow the link below to book a time for your HR onboarding and
                                         mobile app training. We will send you your HR paperwork and a mobile app training video ahead of the
                                         meeting. Please watch the training video and complete necessary HR paperwork ahead of time. .</p>
                                     <div className="ifm_div">
@@ -355,27 +360,13 @@ function TradePartner() {
                         </div></TabPanel>
                         <TabPanel><div className="tab">
                             <div className="form-group-change " style={{ width: '100%' }}>
-                                <p style={{ fontWeight: 'normal' }}>
+                                <p >
                                     Wreno reserves the right to cancel or reschedule this meeting if the Certificate of Insurance does not
                                     show the required minimum coverage limits and / or Wreno Home Services, LLC is not added under the
                                     "Certificate Holder".
                                 </p>
                             </div>
                         </div></TabPanel>
-                        <TabPanel>
-            <div className=" text-center">
-              <div className=" thank-cont">
-              <img className="like_pic" src="/images/like.png" />
-               
-              <h2 className="display-3">Thank You!</h2>
-              <p className="lead">We're reviewing your application <br></br> We'll reachout within 72 hours, if there is anything missing
-              </p>
-              <p className="lead">
-                <a className="btn btn-sm like-bt" href="test_file_2.php" role="button">Go to homepage</a>
-              </p>
-            </div>
-            </div>
-            </TabPanel>
                     </Tabs>
                    
                 </form>

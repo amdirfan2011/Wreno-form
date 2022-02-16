@@ -42,8 +42,11 @@ font-weight: bold;
     width: 50%;
     float: left;
 } 
+label{
+    font-size: 16px;
+}
 input[type=checkbox], input[type=radio] {
-    margin: 0 10px 0 0;
+    margin: 0 10px 0 0 !important;
     margin-top: 1px\9;
     line-height: normal;
     width: auto;
@@ -80,6 +83,8 @@ input[type="file"] {
 }
 .page6-cont li{
     list-style: none;
+    font-weight: bold;
+    font-size: 16px;
 }
 .upload-btn-wrapper .btn {
   border: 2px solid gray;
@@ -116,7 +121,7 @@ input.invalid {
     opacity: 0.8;
   }
   .pg-mrgn {
-    margin-top: 9rem;
+    margin-top: 1rem;
 }
 .pn {
     display:inline-block;
@@ -219,8 +224,8 @@ input.invalid {
             display: inline-block;
     padding: 0 0!important;
     vertical-align: top;
-           min-width: 26% !important;
-    width:26% !important;
+           min-width: 29% !important;
+    width:29% !important;
     position: relative !important;
     top: 10px;
     }
@@ -349,6 +354,7 @@ input.invalid {
     box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
     padding: 10px 10px;
     border-radius: 8px;
+    font-size: 16px;
 }
 .tm_div .form-check{
         display: inline-block;
@@ -369,6 +375,7 @@ input.invalid {
         display: inline-block;
     margin-bottom: 0.5rem;
     width: 100%;
+    font-size: 16px;
 }
 .r_div .form-group .form-check {
     position: relative;
@@ -434,6 +441,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-inp
     border-radius: 5px 5px 0 0;
     color: #378061 !important;
     opacity: 1;
+}
+input[type=file], input[type=file]::-webkit-file-upload-button {
+    cursor: pointer;
+}
+.regForm_p p{
+    padding: 0 0;
+    margin: 0 0 20px 0; 
+}
+.regForm_p p input[type=file] {
+    display: block;
+    height: auto !important;
+}
+.thank_page{
+    padding:5% 0 0 0;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+   
+   line-height: normal !important;
+    font-size: 1.2rem !important;
+}
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root{
+    font-size: 1.5rem !important;
+    left: 4px !important;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+    font-size: 14px !important;
 }
 @media only screen and (min-width: 320px) and (max-width: 991px){
    
@@ -575,7 +608,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-inp
     padding: 0 0px;
 }
 .crsl_left_div {
-    display: inline-block;
+    display:none;
     padding: 0 0 !important;
     vertical-align: top;
         min-width: 100% !important;
