@@ -19,5 +19,4 @@ if Not using Visual Studio Code Editor na,
 
 1.npm install 
 2.npm start
-
 Automatically Run and Open to Browser.
